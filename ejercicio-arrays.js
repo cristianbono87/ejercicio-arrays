@@ -8,19 +8,22 @@ var productosDestacados = [
 // NO TOCAR!!!
 
 // 1 - Arreglar el header (Header Menu Area)
+
 // 1.1 - Cambia el valor de los submenus para que tengan los mismos valores que https://array-test.netlify.com/
 var submenus = [
   // Submenu "Shop"
   [
-    ["lorem ipsum", "link.html"],
-    ["lorem ipsum", "link.html"],
-    ["lorem ipsum", "link.html"]
+    ["Shop Category", 'category.html'],
+    ["Product Details", '"link.html"'],
+    ["Product Checkout", "checkout.html"],
+    ["Confirmation", "confirmation.html"],
+    ["Shopping Cart", "cart.html"],
   ],
   // Submenu "Blog"
   [
-    ["lorem ipsum", "link.html"],
-    ["lorem ipsum", "link.html"],
-    ["lorem ipsum", "link.html"]
+    ["Blog", "blog.html"],
+    ["Blog Details", ".html"],
+
   ],
   // Submenu "Pages"
   [
@@ -35,13 +38,33 @@ var submenus = [
 // help: img/home/hero-slide1.png img/home/hero-slide2.png img/home/hero-slide3.png
 productosCarrusel.push([
   "img/home/hero-slide1.png",
+  "shoes",
+  "Accessories Item"
+]);
+
+productosCarrusel.push([
+  "img/home/hero-slide2.png",
+  "Auriculares",
+  "Accessories Item"
+]);
+
+productosCarrusel.push([
+  "img/home/hero-slide3.png",
   "Wireless Headphone",
   "Accessories Item"
 ]);
 
 // 3 - Arreglar el listado de productos destacados (Trending product)
 // 3.1 - Quita el ultimo elemento del listado con .pop()
+
+productosDestacados.pop();
+
 // 3.2 - Agrega elementos al listado para obtener el mismo resultado que en https://array-test.netlify.com/
+
+productosDestacados.push(['img/r1.jpg'],['img/r2.jpg'],['img/r3.jpg']);
+//productosDestacados.push(['img/r2.jpg']);
+//productosDestacados.push(['img/r3.jpg']);
+//productosDestacados.push(['img/r4.jpg']);
 
 /* NO TOCAR */
 var header = document.querySelectorAll(".nav-item.submenu.dropdown");
